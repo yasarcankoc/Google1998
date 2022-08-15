@@ -1,0 +1,100 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Google Logosunu ortaladım */
+header {
+  display: flex;
+  justify-content: center;
+}
+
+/* Body alanındaki search tablosunu flex ile ortaladım */
+section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+section > div {
+  text-align: center;
+}
+
+.search-container {
+  background-color: #f0f0f0;
+  width: 90%;
+}
+
+/* Search altındaki iki butonu flex ile hizaladım */
+.btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+.search {
+  border: 1px solid lightslategray;
+  border-style: inset;
+  width: 309px;
+  height: 1.5;
+  padding: 2px;
+}
+
+input:hover,
+button:hover {
+  border: 1px solid #0000ee;
+}
+
+button {
+  margin: 0 0.2rem;
+  padding: 2px 6px;
+  border: 1px solid lightslategray;
+  background-color: #f0f0f0;
+}
+
+button:hover {
+  border: 1px solid #0000ee;
+  background-color: rgb(126, 229, 218);
+}
+
+/* FOOTER */
+
+.footer {
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  grid-gap: 2px;
+  margin-top: 2px;
+  width: 90%;
+}
+
+/* TABLOLARIN İÇİNDEKİ YAZILARI FLEX YÖNTEMİ İLE ORTALAYIP ALT ALTA SIRALADIM */
+.tbl {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 75px;
+}
+
+.tbl1 {
+  background-color: #7ee5da;
+}
+
+.tbl2 {
+  background-color: #70ccc2;
+  font-size: small;
+}
+
+.tbl3 {
+  background-color: #62b3aa;
+  font-size: small;
+}
+
+section > p {
+  margin-top: 1rem;
+  font-size: small;
+}
+
+/* FOOTER */
